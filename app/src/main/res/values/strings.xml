@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Score Keeper</string>
+    <string name="buttonGoal">GOAL</string>
+    <string name="buttonFoul">FOUL</string>
+    <string name="resetButton">RESET</string>
+    <string name="score">0</string>
+    <string name="teamA">Juventus</string>
+    <string name="teamB">Barcellona</string>
+</resources>

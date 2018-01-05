@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            tools:context=".MainActivity">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/teamBottom"
+                android:layout_marginTop="@dimen/teamTop"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/Padding"
+                android:text="@string/teamA"
+                android:textColor="@color/lightBlue"
+                android:textSize="@dimen/teamTextSize" />
+
+            <ImageView
+                android:id="@+id/logo_juve"
+                android:layout_width="@dimen/imageWidth"
+                android:layout_height="@dimen/imageHeight"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/imageBottom"
+                android:src="@drawable/stemmajuve1" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/MarginLeft"
+                android:layout_marginRight="@dimen/MarginRight"
+                android:onClick="addOneToJuventus"
+                android:text="@string/buttonGoal"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/juventus_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/scoreBottom"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/Padding"
+                android:text="@string/score"
+                android:textColor="@color/lightBlue"
+                android:textSize="@dimen/scoreSize" />
+
+
+            <TextView
+                android:id="@+id/juventus_fouls"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/Padding"
+                android:text="@string/score"
+                android:textColor="@color/strawberryRed"
+                android:textSize="@dimen/scoreSize" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/MarginLeft"
+                android:layout_marginRight="@dimen/MarginRight"
+                android:onClick="addOneFoulToJuve"
+                android:text="@string/buttonFoul"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/lineTop"
+            android:background="@color/lightBlue" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            tools:context=".MainActivity">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/teamBottom"
+                android:layout_marginTop="@dimen/teamTop"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/Padding"
+                android:text="@string/teamB"
+                android:textColor="@color/lightBlue"
+                android:textSize="@dimen/teamTextSize" />
+
+            <ImageView
+                android:layout_width="@dimen/imageWidth"
+                android:layout_height="@dimen/imageHeight"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/imageBottom"
+                android:src="@drawable/stemmabarcellona" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/MarginLeft"
+                android:layout_marginRight="@dimen/MarginRight"
+                android:onClick="addOneToBarcellona"
+                android:text="@string/buttonGoal"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/barcelona_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/scoreBottom"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/Padding"
+                android:text="@string/score"
+                android:textColor="@color/lightBlue"
+                android:textSize="@dimen/scoreSize" />
+
+            <TextView
+                android:id="@+id/barcelona_fouls"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/Padding"
+                android:text="@string/score"
+                android:textColor="@color/strawberryRed"
+                android:textSize="@dimen/scoreSize" />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/MarginLeft"
+                android:layout_marginRight="@dimen/MarginRight"
+                android:onClick="addOneFoulToBarca"
+                android:text="@string/buttonFoul"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:background="@color/strawberryRed"
+        android:onClick="resetScore"
+        android:text="@string/resetButton"
+        android:textColor="@color/white" />
+
+</RelativeLayout>
+
+
+

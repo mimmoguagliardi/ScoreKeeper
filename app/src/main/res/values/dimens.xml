@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="Padding">4dp</dimen>
+    <dimen name="scoreSize">56sp</dimen>
+    <dimen name="teamTextSize">22sp</dimen>
+    <dimen name="imageWidth">40dp</dimen>
+    <dimen name="imageHeight">48dp</dimen>
+    <dimen name="MarginLeft">24dp</dimen>
+    <dimen name="MarginRight">24dp</dimen>
+    <dimen name="teamBottom">2dp</dimen>
+    <dimen name="teamTop">16dp</dimen>
+    <dimen name="imageBottom">16dp</dimen>
+    <dimen name="lineTop">16dp</dimen>
+    <dimen name="scoreBottom">8dp</dimen>
+</resources>
